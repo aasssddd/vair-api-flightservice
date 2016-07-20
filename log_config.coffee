@@ -7,7 +7,7 @@ module.exports =
 		level: "info"
 		name: "server.log"
 		path: "./"
-	# logentries: {
-	# 	"level": "info",
-	# 	"token": "7a6b50b7-b6a1-4a31-b9a8-dfcbf66321f8"
-	# }
+	logentries: 
+		"level": "info"
+		"token": "44d9f9f2-1469-43c3-ad4f-12990cdd7227"
+	

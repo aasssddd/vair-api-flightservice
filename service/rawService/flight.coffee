@@ -15,7 +15,11 @@ module.exports.departure = (wsdl, opts, callback) ->
 			dtFlightTo: opts.dtFlightTo ? undefined
 			strLanguage: opts.strLanguage ? undefined
 
+		# console.log params
 		client.GetFlightInformationDeparture params, (err, data) ->
+			# console.log "Request Header: #{JSON.stringify client.lastRequestHeaders}"
+			# console.log "Request Body: #{client.lastRequest}"
+			# log.debug "Response Body #{client.lastResponse}"
 			if err?
 				throw err
 			if not data.GetFlightInformationDepartureResult?

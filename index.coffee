@@ -49,7 +49,9 @@ d.run =>
 			OriginCode: req.params.origin
 			DestinationCode: req.params.destination
 			dtFlightFrom: req.params.departureDate
+			dtFlightTo: req.params.departureDate
 
+		console.log JSON.stringify opts
 		svrCtl.getFlightDeparture opts, (err, data) ->
 			if err?
 				return res.json {code: "9000", result: "#{err}"}
