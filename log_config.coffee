@@ -9,5 +9,5 @@ module.exports =
 		path: "./"
 	logentries: 
 		"level": "info"
-		"token": "44d9f9f2-1469-43c3-ad4f-12990cdd7227"
+		"token": "put your logentries token here"
 	
